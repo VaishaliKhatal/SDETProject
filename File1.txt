@@ -15,3 +15,5 @@ Hello world!!
 
 7. Change :- for CR1 for rebasing.
 
+8. Change :- for stash WI7 half done.
+
