@@ -1,7 +1,9 @@
 Hello world!!
 
-Change for Login feature WI1
+Change for Login feature WI1.
 
-Check for diff 
+Check for diff.
 
-Change for bug1 
+Change for bug1.
+
+Chnage for bug2 fix.
