@@ -1,12 +1,14 @@
 Hello world!!
 
 
-Change - for Login feature WI1.
+1. Change - for Login feature WI1.
 
-Check -  for diff .
+2. Check -  for diff .
 
-Change - for bug1 .
+3. Change - for bug1 .
 
-Change - by team mate for WI5 3-way merging and added hyphen.
+4. Change - by team mate for WI5 3-way merging and added hyphen.
 
-Chnage - for bug2 fix.
+5. Chnage - for bug2 fix.
+
+6. Change - by team mate for WI6 for rebase.
