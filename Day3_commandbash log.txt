@@ -1,0 +1,351 @@
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 78f4588 (HEAD -> master) WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git remote
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git remote add origin https://github.com/VaishaliKhatal/SDETProject.git
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git remote
+origin
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git remote -v
+origin  https://github.com/VaishaliKhatal/SDETProject.git (fetch)
+origin  https://github.com/VaishaliKhatal/SDETProject.git (push)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git push -u origin master
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (31/31), 3.45 KiB | 588.00 KiB/s, done.
+Total 31 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/VaishaliKhatal/SDETProject.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 78f4588 (HEAD -> master, origin/master) WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 738 bytes | 105.00 KiB/s, done.
+From https://github.com/VaishaliKhatal/SDETProject
+   78f4588..3b9bbb8  master     -> origin/master
+Updating 78f4588..3b9bbb8
+Fast-forward
+ File1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 3b9bbb8 (HEAD -> master, origin/master) WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git commit -am "bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase"
+[master 0b9f133] bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 0b9f133 (HEAD -> master) bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+* 3b9bbb8 (origin/master) WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git push
+To https://github.com/VaishaliKhatal/SDETProject.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/VaishaliKhatal/SDETProject.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 0b9f133 (HEAD -> master) bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+* 3b9bbb8 (origin/master) WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 829 bytes | 165.00 KiB/s, done.
+From https://github.com/VaishaliKhatal/SDETProject
+   3b9bbb8..38615a2  master     -> origin/master
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* 0b9f133 (HEAD -> master) bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+* 3b9bbb8 WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git pull --rebase
+error: could not apply 0b9f133... bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0b9f133... bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+Auto-merging File1.txt
+CONFLICT (content): Merge conflict in File1.txt
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master|REBASE 1/1)
+$ git status
+interactive rebase in progress; onto 38615a2
+Last command done (1 command done):
+   pick 0b9f133 bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+No commands remaining.
+You are currently rebasing branch 'master' on '38615a2'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master|REBASE 1/1)
+$ git add .
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master|REBASE 1/1)
+$ git status
+interactive rebase in progress; onto 38615a2
+Last command done (1 command done):
+   pick 0b9f133 bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase
+No commands remaining.
+You are currently rebasing branch 'master' on '38615a2'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File1.txt
+
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master|REBASE 1/1)
+$ git log --oneline --decorate --graph
+* 38615a2 (HEAD, origin/master) CR2:File1 updated for CR2 by team mate on remote master with conflict rebase and hyphen
+* 3b9bbb8 WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master|REBASE 1/1)
+$ git rebase --continue
+hint: Waiting for your editor to close the file... unix2dos: converting file D:/Learning and Training/Git/Project/SDETProject/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file D:/Learning and Training/Git/Project/SDETProject/.git/COMMIT_EDITMSG to Unix format...
+[detached HEAD a8be532] bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase. Fixed conflict in file 1 for CR2 n Bug3.
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+Successfully rebased and updated refs/heads/master.
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* a8be532 (HEAD -> master) bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase. Fixed conflict in file 1 for CR2 n Bug3.
+* 38615a2 (origin/master) CR2:File1 updated for CR2 by team mate on remote master with conflict rebase and hyphen
+* 3b9bbb8 WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 487 bytes | 487.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/VaishaliKhatal/SDETProject.git
+   38615a2..a8be532  master -> master
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git log --oneline --decorate --graph
+* a8be532 (HEAD -> master, origin/master) bug3:File1 updated to amke C caps and colon and aaded local master change to test rebase. Fixed conflict in file 1 for CR2 n Bug3.
+* 38615a2 CR2:File1 updated for CR2 by team mate on remote master with conflict rebase and hyphen
+* 3b9bbb8 WI8:File1 updated to test pull operation
+* 78f4588 WI7: File 1 updated to test stash
+* 1ad41c4 (tag: V1.1, CR1) CR1:File1 updated added comon and new chnage for CR1. The confict whle rebase resolved by retaining both chnagd form Cr1 as from WI6.
+* 4aba6d2 WI6:File1 updated with number and adde chnage for WI 6 by team mate for rebase
+*   d48766e conflict resolved : for WI5 by team mate and bug2
+|\
+| * 2594807 (bug2) bug2:File1 updated to fix bug2 and fullstop added
+* | 2a9db7b WI5:File 1 updated by team mate for WI5 3-way merging and added hyphen
+|/
+* 97b10c3 (tag: V1.0) bug1:file1 updated to fix bug
+* dc5389b WI2:File1 updated ti test diff command. gitignore created to skip class, jar, bin folder, testdata file
+* 4f46803 WI1:File1 updated for chnage for login feature
+* 61cfb6e WI1:File1 created, hello world
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git/Project/SDETProject (master)
+$
+vaishali_khatal@ARPGL001522 MINGW64 /d/Learning and Training/Git
+$ git clone https://github.com/VaishaliKhatal/SDETProject.git
+Cloning into 'SDETProject'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (40/40), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 40 (delta 7), reused 34 (delta 5), pack-reused 0
+Receiving objects: 100% (40/40), 5.31 KiB | 1.77 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
