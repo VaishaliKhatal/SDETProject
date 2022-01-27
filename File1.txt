@@ -17,4 +17,6 @@ Hello world!!
 
 8. Change :- for stash WI7 half done.
 
-9. change to test pull for WI8.
+9. change - to test pull for WI8.
+
+10. Change - CR2 by team mate on remote master with confict rebase.
